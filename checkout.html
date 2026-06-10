@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sara | Online Store</title>
+
+    <link rel="icon" href="img/icon (2).png">
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+         <!-- File CSS -->
+         <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price_cart_toral">$0</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="#" class="btn_cart btn">Checkout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
+            </div>
+        </div>
+
+    </div>
+
+      <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="img/logo (2).png" alt=""></a>
+                <form action="" class="search_box">
+                    <div class="select_box">
+                        <select id="category" name="category">
+                            <option value="All categories">All categories</option>
+                            <option value="Home appliances">Home appliances</option>
+                            <option value="Television">Television</option>
+                            <option value="Headphones">Headphones</option>
+                            <option value="Games">Games</option>
+                            <option value="Electronics">Electronics</option>
+                           
+
+                        </select>
+
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="category_nav">
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse Category</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <div class="category_nav_list">
+                            <a href="#">Top 10 offers</a>
+                            <a href="#">Electronic & Digita</a>
+                            <a href="#">Phones& Tablet</a>
+                            <a href="#">Fashion & Cllothings</a>
+                            <a href="#">Television & Monitor</a>
+                            <a href="#">Toys</a>
+                        </div>
+                    </div>
+                    <ul class="nav_links">
+                        <li class="active"> <a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </nav>
+                <div class="login_signup btns">
+                    <a href="#" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="#" class="btn">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+     </header>
+
+
+    <section class="checkout">
+        <form action="">
+
+
+            <div class="container">
+                <div class="ordersummary">
+                    <h1>Order Summary</h1>
+
+                    <div class="items">
+
+    
+
+
+                        <div class="item_cart">
+
+                            <div class="image_name">
+                                <img src="img/infinix6.png" alt="">
+
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p class="price_cart">$25</p>
+                                    <div class="quantity_control">
+                                        <button class="decrease_quantity">-</button>
+                                        <span class="quantity">3</span>
+                                        <button class="increase_quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+
+
+
+                        </div>
+
+                        <div class="item_cart">
+
+                            <div class="image_name">
+                                <img src="img/checked.png" alt="">
+
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p class="price_cart">$25</p>
+                                    <div class="quantity_control">
+                                        <button class="decrease_quantity">-</button>
+                                        <span class="quantity">3</span>
+                                        <button class="increase_quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="bottom_summary">
+                        <div class="shop_table">
+                            <p>Subtotal :</p>
+                            <span class="subtotal_checkout">$325.00</span>
+                        </div>
+
+
+                        <div class="shop_table">
+                            <p>Shipping :</p>
+                            <span class="">$20.00</span>
+                        </div>
+
+
+
+                        <div class="shop_table">
+                            <p>total :</p>
+                            <span class="total_checkout">$325.00</span>
+                        </div>
+
+
+                        <div class="button_div">
+                            <button type="submit">Place order</button>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="input_info">
+                    
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    
+
+    <footer>
+        <div class="container">
+
+            <div class="big_row">
+                <img class="logo_footer" src="img/white_logo.png" alt="">
+
+                <p> you can connect with as from:</p>
+
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Find It Fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Quick Links</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>sara Store.</span> All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>
