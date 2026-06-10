@@ -24,7 +24,7 @@ fetch('products.json')
                     const isInCart = cart.some(item => item.id === product.id)
 
                     
-                    swiper_items_sale.innerHTML += `
+                    return += `
 
 
                   <div class="swiper-slide product">
